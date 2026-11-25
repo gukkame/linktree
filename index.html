@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Links</title>
+  <meta name="description" content="All my links in one place">
+  <meta property="og:title" content="Links">
+  <meta property="og:description" content="All my links in one place">
+  <link rel="icon" href="avatar.png">
+  <style>
+    :root {
+      --bg: #f6f5f2; --card: #ffffff; --text: #16161a; --muted: #6b6b76;
+      --border: #e4e2dc; --accent: #16161a; --accent-text: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111114; --card: #1b1b20; --text: #f2f2f4; --muted: #9a9aa6;
+        --border: #2a2a31; --accent: #f2f2f4; --accent-text: #111114;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex; justify-content: center; padding: 48px 16px;
+    }
+    main { width: 100%; max-width: 520px; text-align: center; }
+    .avatar {
+      width: 96px; height: 96px; border-radius: 50%; object-fit: cover;
+      border: 1px solid var(--border); background: var(--card);
+    }
+    h1 { font-size: 1.35rem; margin: 16px 0 4px; }
+    .bio { color: var(--muted); margin: 0 0 28px; }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    a.link {
+      display: block; padding: 16px 20px; border-radius: 14px;
+      background: var(--card); color: var(--text); text-decoration: none;
+      border: 1px solid var(--border); font-weight: 600;
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    a.link:hover, a.link:focus-visible { transform: translateY(-2px); border-color: var(--muted); }
+    a.link.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+    a.link small { display: block; font-weight: 400; color: var(--muted); font-size: .85rem; }
+    a.link.primary small { color: inherit; opacity: .75; }
+    footer { margin-top: 36px; color: var(--muted); font-size: .8rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="avatar" src="avatar.png" alt="" onerror="this.style.display='none'">
+    <h1 id="name"></h1>
+    <p class="bio" id="bio"></p>
+    <ul id="links"></ul>
+    <footer id="footer"></footer>
+  </main>
+
+  <script>
+    // ✏️ Edit everything here — this is the only part you need to change.
+    const PROFILE = {
+      name: "Your Name",
+      bio: "Web design & development · Let's build your site",
+      links: [
+        { title: "Book a free call", subtitle: "15 minutes, no strings", url: "https://example.com/book", primary: true },
+        { title: "My website", url: "https://example.com" },
+        { title: "WhatsApp me", url: "https://wa.me/0000000000" },
+        { title: "Email", url: "mailto:hello@example.com" },
+        { title: "Instagram", url: "https://instagram.com/yourhandle" },
+      ],
+    };
+
+    document.title = PROFILE.name;
+    document.getElementById("name").textContent = PROFILE.name;
+    document.getElementById("bio").textContent = PROFILE.bio;
+    document.getElementById("footer").textContent = "© " + new Date().getFullYear() + " " + PROFILE.name;
+
+    const list = document.getElementById("links");
+    for (const l of PROFILE.links) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.className = "link" + (l.primary ? " primary" : "");
+      a.href = l.url;
+      a.rel = "noopener";
+      a.textContent = l.title;
+      if (l.subtitle) {
+        const s = document.createElement("small");
+        s.textContent = l.subtitle;
+        a.appendChild(s);
+      }
+      li.appendChild(a);
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>
