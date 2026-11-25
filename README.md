@@ -11,3 +11,7 @@ Put a square photo named `avatar.png` next to `index.html` for your profile pict
 2. Source: **Deploy from a branch**, Branch: `main`, folder `/ (root)` → Save
 3. After a minute your page is live at `https://<your-username>.github.io/<repo-name>/`
 4. Paste that URL into your Instagram bio.
+
+## Custom domain
+Served at https://links.guntasdevspace.com (see `CNAME`).
+DNS: a `CNAME` record for `links` pointing to `gukkame.github.io`.
