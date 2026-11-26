@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Before you fly to Bali: a one-page checklist</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="One page. Eleven things to sort before your first trip to Bali. Free.">
+  <meta property="og:title" content="Before you fly to Bali">
+  <meta property="og:description" content="One page. Eleven things to sort before your first trip to Bali. Free.">
+  <style>
+    :root {
+      --bg: #f4f2ed; --paper: #fbfaf7; --ink: #1d2523; --muted: #5d6865;
+      --line: #d9d6cd; --accent: #2c6a68; --mark: #b3262e;
+    }
+    @media (prefers-color-scheme: dark) and (screen) {
+      :root { --bg: #111615; --paper: #181e1d; --ink: #e8eeec; --muted: #98a6a3; --line: #2c3837; --accent: #6bb5b1; --mark: #e8707a; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 40px 16px 64px; }
+    .sheet { max-width: 720px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line);
+      border-radius: 6px; padding: 40px 40px 32px; }
+    .by { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(2rem, 6vw, 2.8rem);
+      line-height: 1.08; letter-spacing: -.01em; margin: 0 0 10px; }
+    .sub { color: var(--muted); margin: 0 0 28px; max-width: 52ch; }
+    .group { margin-top: 22px; }
+    .group h2 { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
+      margin: 0 0 4px; font-weight: 700; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { border-bottom: 1px solid var(--line); }
+    li:last-child { border-bottom: 0; }
+    label { display: flex; gap: 14px; align-items: flex-start; padding: 11px 0; cursor: pointer; }
+    input[type=checkbox] { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .box { flex: 0 0 20px; height: 20px; margin-top: 3px; border: 2px solid var(--ink); border-radius: 4px; display: grid; place-items: center; }
+    input:checked + .box { background: var(--accent); border-color: var(--accent); }
+    input:checked + .box::after { content: ""; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg) translate(-1px,-1px); }
+    input:focus-visible + .box { outline: 2px solid var(--mark); outline-offset: 2px; }
+    input:checked ~ .t strong { color: var(--muted); text-decoration: line-through; }
+    .t strong { display: block; font-weight: 650; }
+    .t span { display: block; color: var(--muted); font-size: .95rem; }
+    .official { margin: 6px 0 4px 34px; padding: 8px 12px; border-left: 3px solid var(--mark); background: var(--bg); font-size: .9rem; }
+    .ph { outline: 1px dashed var(--mark); padding: 0 4px; color: var(--mark); }
+    .next { margin-top: 28px; padding: 18px 20px; background: var(--ink); color: var(--paper); border-radius: 4px; }
+    .next p { margin: 0 0 4px; }
+    .next .big { font-family: Georgia, serif; font-size: 1.25rem; font-weight: 700; }
+    .next a { color: inherit; font-weight: 600; }
+    .tools { max-width: 720px; margin: 18px auto 0; display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn { appearance: none; border: 1px solid var(--ink); background: transparent; color: var(--ink); font: 600 .9rem/1 inherit;
+      padding: 12px 16px; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+    .btn.primary { background: var(--ink); color: var(--paper); }
+    .foot { max-width: 720px; margin: 18px auto 0; font-size: .8rem; color: var(--muted); }
+    @media (max-width: 520px) { .sheet { padding: 26px 20px 22px; } }
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { background: #fff; padding: 0; font-size: 10.5pt; line-height: 1.4; }
+      :root { --bg:#fff; --paper:#fff; --ink:#1d2523; --muted:#5d6865; --line:#d9d6cd; --accent:#2c6a68; }
+      .sheet { border: 0; padding: 0; max-width: none; }
+      h1 { font-size: 26pt; }
+      .sub { margin-bottom: 14px; }
+      .group { margin-top: 12px; }
+      label { padding: 6px 0; }
+      .t span { font-size: 9.5pt; }
+      .next { margin-top: 16px; padding: 12px 16px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .tools, .foot { display: none; }
+      .box, input:checked + .box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <p class="by">Gunta · @guntatravel</p>
+    <h1>Before you fly to Bali</h1>
+    <p class="sub">One page. Eleven things. First trip to Asia, no background needed. Tick them off.</p>
+
+    <section class="group">
+      <h2>Paperwork</h2>
+      <ul>
+        <li><label><input type="checkbox" data-k="passport"><span class="box"></span><span class="t"><strong>Passport</strong><span>Check how long it stays valid. The rule is on the official page below. Do not guess.</span></span></label></li>
+        <li>
+          <label><input type="checkbox" data-k="entry"><span class="box"></span><span class="t"><strong>Entry and visa rules</strong><span>Rules change. Read the official source. Write down the date you read it.</span></span></label>
+          <div class="official">Official source: <a href="#" class="ph" id="official">[add official immigration link]</a> · Checked on <span class="ph" id="checked">[add date]</span></div>
+        </li>
+        <li><label><input type="checkbox" data-k="insurance"><span class="box"></span><span class="t"><strong>Travel insurance</strong><span>Get it before you fly. Read what it says about scooters and about medical care.</span></span></label></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Arrival</h2>
+      <ul>
+        <li><label><input type="checkbox" data-k="nights"><span class="box"></span><span class="t"><strong>Book only the first 3 to 7 nights</strong><span>Not the whole trip. Look around first. Then decide where to stay next.</span></span></label></li>
+        <li><label><input type="checkbox" data-k="transfer"><span class="box"></span><span class="t"><strong>Airport transfer</strong><span>Decide how you get from the airport before you land. Not at the exit, tired, with a bag.</span></span></label></li>
+        <li><label><input type="checkbox" data-k="sim"><span class="box"></span><span class="t"><strong>eSIM or SIM</strong><span>Sort data before you land. You need maps and a ride on day one.</span></span></label></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Money and health</h2>
+      <ul>
+        <li><label><input type="checkbox" data-k="money"><span class="box"></span><span class="t"><strong>Money plan</strong><span>Decide how you pay and how you get cash. Find out what your bank charges abroad.</span></span></label></li>
+        <li><label><input type="checkbox" data-k="doctor"><span class="box"></span><span class="t"><strong>Questions for your doctor</strong><span>Write them down first. What should I sort before this trip? What about my regular medicine? What if I get sick there?</span></span></label></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Day to day</h2>
+      <ul>
+        <li><label><input type="checkbox" data-k="scooter"><span class="box"></span><span class="t"><strong>Scooter licence and insurance</strong><span>If you plan to ride, check what licence and cover you need. Do not assume.</span></span></label></li>
+        <li><label><input type="checkbox" data-k="apps"><span class="box"></span><span class="t"><strong>Apps and offline maps</strong><span>Download them at home, on Wi-Fi. Download the maps for the areas you will be in.</span></span></label></li>
+        <li><label><input type="checkbox" data-k="work"><span class="box"></span><span class="t"><strong>Work setup</strong><span>If you work remotely: test the laptop setup, back up your files, plan for bad Wi-Fi.</span></span></label></li>
+      </ul>
+    </section>
+
+    <aside class="next">
+      <p class="big">This is the short version.</p>
+      <p>The full Bali guide has my real stays, prices, work spots and a first-week plan. Day by day. Dated prices.</p>
+      <p id="guide-line"><a href="https://instagram.com/guntatravel">Follow @guntatravel</a> for the launch.</p>
+    </aside>
+  </main>
+
+  <div class="tools">
+    <a class="btn primary" href="before-you-fly-to-bali.pdf" download>Download the PDF</a>
+    <button class="btn" onclick="window.print()">Print</button>
+  </div>
+  <p class="foot">Updated 26 Nov 2026. Based on my own trip. Not legal or medical advice. Always check official sources.</p>
+
+  <script>
+    // Ticks are saved in this browser only.
+    var boxes = document.querySelectorAll('input[type=checkbox]');
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem('bali-checklist') || '{}'); } catch (e) {}
+    boxes.forEach(function (b) {
+      b.checked = !!saved[b.dataset.k];
+      b.addEventListener('change', function () {
+        saved[b.dataset.k] = b.checked;
+        try { localStorage.setItem('bali-checklist', JSON.stringify(saved)); } catch (e) {}
+      });
+    });
+  </script>
+</body>
+</html>
