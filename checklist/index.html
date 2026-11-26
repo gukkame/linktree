@@ -41,6 +41,7 @@
     .t strong { display: block; font-weight: 650; }
     .t span { display: block; color: var(--muted); font-size: .95rem; }
     .official { margin: 6px 0 4px 34px; padding: 8px 12px; border-left: 3px solid var(--mark); background: var(--bg); font-size: .9rem; }
+    .t a, .official a { color: var(--accent); text-underline-offset: 2px; }
     .ph { outline: 1px dashed var(--mark); padding: 0 4px; color: var(--mark); }
     .next { margin-top: 28px; padding: 18px 20px; background: var(--ink); color: var(--paper); border-radius: 4px; }
     .next p { margin: 0 0 4px; }
@@ -79,17 +80,18 @@
       <h2>Paperwork</h2>
       <ul>
         <li>
-          <label><input type="checkbox" data-k="passport"><span class="box"></span><span class="t"><strong>Passport</strong><span>Check how long it stays valid. The rule is on the official page below. Do not guess.</span></span></label>
+          <label><input type="checkbox" data-k="passport"><span class="box"></span><span class="t"><strong>Passport</strong><span>Check how long it stays valid. The rule is on the official visa page below. Do not guess.</span></span></label>
         </li>
         <li>
           <label><input type="checkbox" data-k="visa"><span class="box"></span><span class="t"><strong>Visa: visa on arrival or C1 travel visa</strong><span>Check which one applies to your passport. Rules change and differ by country. Read the official source, then write down the date you read it.</span></span></label>
+          <div class="official">Official sources: <a href="https://evisa.imigrasi.go.id/web/home" target="_blank" rel="noopener">apply for a visa (visa on arrival and C1)</a> · <a href="https://imigrasi.go.id/wna/daftar-visa-indonesia/C1?lang=en-US" target="_blank" rel="noopener">C1 visa details</a></div>
         </li>
         <li>
           <label><input type="checkbox" data-k="arrival"><span class="box"></span><span class="t"><strong>Arrival card</strong><span>Indonesia asks you to fill one in. Do it on the official source only. Save a copy.</span></span></label>
-          <div class="official">Official sources: visa <a href="#" class="ph" id="official-visa">[add visa link]</a> · arrival card <a href="#" class="ph" id="official-arrival">[add arrival card link]</a> · Checked on <span class="ph" id="checked">[add date]</span></div>
+          <div class="official">Official source: <a href="https://allindonesia.imigrasi.go.id/" target="_blank" rel="noopener">All Indonesia arrival card</a> · Links checked 26 Nov 2026</div>
         </li>
         <li>
-          <label><input type="checkbox" data-k="insurance"><span class="box"></span><span class="t"><strong>Travel insurance</strong><span>Check your credit cards first. Some already include it. If yours does not, I recommend Genki.</span></span></label>
+          <label><input type="checkbox" data-k="insurance"><span class="box"></span><span class="t"><strong>Travel insurance</strong><span>Check your credit cards first. Some already include it. If yours does not, I recommend <a href="https://genki.world/" target="_blank" rel="noopener">Genki</a>.</span></span></label>
         </li>
       </ul>
     </section>
@@ -101,10 +103,10 @@
           <label><input type="checkbox" data-k="stay"><span class="box"></span><span class="t"><strong>Book your accommodation</strong><span>Book all of it before you fly. Airbnb and Booking are not the only place to look. The full guide shows where else.</span></span></label>
         </li>
         <li>
-          <label><input type="checkbox" data-k="transfer"><span class="box"></span><span class="t"><strong>Airport transfer</strong><span>Use a ride app: Grab or Gojek. Check that the app accepts your card before you fly. Add your card in the app.</span></span></label>
+          <label><input type="checkbox" data-k="transfer"><span class="box"></span><span class="t"><strong>Airport transfer</strong><span>Use a ride app: <a href="https://www.grab.com/id/en/download/" target="_blank" rel="noopener">Grab</a> or <a href="https://www.gojek.com/en-id" target="_blank" rel="noopener">Gojek</a>. Check that the app accepts your card before you fly. Add your card in the app.</span></span></label>
         </li>
         <li>
-          <label><input type="checkbox" data-k="sim"><span class="box"></span><span class="t"><strong>eSIM or SIM</strong><span>If you use Revolut, buy the eSIM in the app. Otherwise, I recommend an official Telkomsel booth or shop. Wi-Fi is everywhere.</span></span></label>
+          <label><input type="checkbox" data-k="sim"><span class="box"></span><span class="t"><strong>eSIM or SIM</strong><span>If you use Revolut, buy the eSIM in the app. Otherwise, I recommend an official Telkomsel booth or shop (<a href="https://www.telkomsel.com/en/contact-us/grapari" target="_blank" rel="noopener">find a GraPARI</a>). Wi-Fi is everywhere.</span></span></label>
         </li>
       </ul>
     </section>
@@ -116,8 +118,7 @@
           <label><input type="checkbox" data-k="cash"><span class="box"></span><span class="t"><strong>Cash</strong><span>I recommend carrying cash. You need it mostly at street markets and at entrances, for example waterfalls. Check what your bank charges abroad.</span></span></label>
         </li>
         <li>
-          <label><input type="checkbox" data-k="health"><span class="box"></span><span class="t"><strong>Vaccines and health</strong><span>Check which vaccines are recommended for Indonesia. WHO link below. Then ask your doctor. Write your questions down first.</span></span></label>
-          <div class="official">WHO country list, 2022 edition (find Indonesia): <a href="https://www.who.int/publications/m/item/vaccination-requirements-and-recommendations-for-international-travellers-and-malaria-situation-per-country-2022-edition" target="_blank" rel="noopener">who.int</a></div>
+          <label><input type="checkbox" data-k="health"><span class="box"></span><span class="t"><strong>Vaccines and health</strong><span>Check your own country's government website for travel health recommendations for Indonesia. Then ask your doctor. Write your questions down first.</span></span></label>
         </li>
       </ul>
     </section>
